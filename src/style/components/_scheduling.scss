@@ -1,0 +1,126 @@
+.scheduling{
+    .scheduling-header{
+        font-size: 2rem;
+        color: $blue;
+        font-weight: $regular;
+        margin-bottom: 1rem;
+    }
+
+    .schedule-header{
+        font-size: 13px;
+        font-weight: $medium;
+        padding: 10px;
+    }
+
+    .scheduling-grid{
+        display: flex;
+
+        &>div:first-child{
+            background-color: #ffffff60;
+            max-width: 300px;
+            width: 100%;
+            margin-right: 2rem;
+        }
+        &>div:last-child{
+            padding: 1.5rem 2.5rem;
+            background-color: #ffffff60;
+            max-width: calc( 85vw - 472px);
+            width: 100%;
+        }
+    }
+    .confirmed-candidates{
+        padding: calc(20px + 1rem) 1.4rem 1.4rem 1.4rem;
+        max-height: calc(100vh - 330px);
+        overflow-y: auto;
+    }
+    .confirmed-user{
+        display: flex;
+        align-items: center;
+        padding: 7px;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        .confirmed-user-img{
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        .confirmed-user-name{
+            color: #000000;
+            font-size: 12px;
+            font-weight: $medium;
+        }
+        .confirmed-user-position{
+            color: #000000;
+            font-weight: $light;
+            font-size: 10px;
+        }
+    }
+
+    .confirmed-user:last-child{
+        margin-bottom: 0;
+    }
+    
+    .interviewers{
+        width:100%;
+    }
+    .interviewer{
+        border-radius: 7px;
+        background-color: #2680eb;
+        padding-bottom: 1rem;
+        .interviewer-name{
+            background-color: #0075e2;
+            text-align: center; 
+            color: #ffffff;
+            padding: 10px 0;
+            border-radius: 7px 7px 0 0;
+        }
+        .interviewer-candidates{
+            padding: 1rem 1.5rem;
+            max-height: calc(100vh - 359px);
+            overflow-y: auto;
+        }
+    }
+    
+    .slick-initialized .slick-slide{
+        padding-right: 1.5rem;
+    }
+
+    @media screen  and (max-width: 960px){
+       .scheduling-grid > div:last-child{
+            max-width: calc( 85vw - 300px);
+        }
+    }
+    @media screen  and (max-width: 780px){
+       .scheduling-grid{
+            flex-direction: column;
+
+            &>div:first-child{
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
+            &>div:last-child{
+                max-width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 680px){
+        .slick-initialized .slick-slide{
+            padding-right: 0rem;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .scheduling-header{
+            font-size: 1.4rem
+        }
+    }
+}

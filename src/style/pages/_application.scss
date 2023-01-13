@@ -1,0 +1,81 @@
+.applications-container{
+    padding-top: calc($header_height + 3rem );
+    width: 70vw;
+    margin: 0 auto;
+    min-height: 100vh;
+    .app-tabs-container{
+        margin-bottom: 3rem;
+    }
+    .app-tab{
+        height: 50px;
+    }
+    
+    .app-tab:first-child{
+        padding: 0 45px 0 7px;
+    }
+    .app-tab:last-child{
+        padding: 0 45px;
+        .confirm-app{
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: #5aa4ff1c;
+            border-radius: 3px;
+            margin-left: 10px;
+            font-size: 11px;
+            color: #000000;
+        }
+    }
+
+    .add-email{
+        display: flex;
+        margin-bottom: 3rem;
+        .blue-btn{
+            padding: 0 20px;
+            border-radius: 5px;
+        }
+    }
+
+    .form-input-field{
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+
+    .confirmed-content{
+        max-width: 700px;
+        background-color: #ffffff60;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+    }
+
+    .pagnition{
+        width: 80%;
+        height: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    @media screen and (max-width: 700px){
+        &{
+            width: 100%;
+            max-width: 90vw;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .confirmed-content{
+            padding: 1rem 8px
+        }
+        .app-tabs-container{
+            display:flex;
+            justify-content: space-between;
+            
+        }
+        .app-tab:first-child,
+        .app-tab:last-child{
+            padding: 0 2px;
+            flex-basis: 50%;
+        }
+
+    }
+
+}

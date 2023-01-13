@@ -1,0 +1,23 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+
+// Helper
+@import './helper/variable';
+@import './helper/common';
+@import './helper/mixin';
+
+
+// Component
+@import './components/header';
+@import './components/auth_arth';
+@import './components/interview';
+@import './components/scheduling';
+@import './components/questionContent';
+
+
+// Pages
+@import './pages/pages.scss';
+@import './pages/application';
+@import './pages/interviewpage';
+@import './pages/setting';
+

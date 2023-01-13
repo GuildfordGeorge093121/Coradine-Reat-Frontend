@@ -1,0 +1,116 @@
+.login-register{
+    display: flex;
+    align-items: center;
+    min-height: calc( 100vh - $header_height);
+    padding-bottom: 4rem;
+   
+    .server-error-message{
+        width: 100%;
+        height: 1rem;
+        margin-bottom: 1.5rem;
+        color: red;
+        font-weight: $regular;
+        text-align: center;
+    }
+    .form-container{
+        background-color: $sectionBackground;
+        border-radius: 5px;
+        padding: 1rem 1.5rem 2rem 1.5rem;
+        margin: 0 auto;
+        box-shadow: 3px 1px 10px $shadowColor;
+    }
+    h3{
+        text-align: center;
+    }
+    .form-header{
+        margin-bottom: 1.5rem;
+    }
+    .form-input-field{
+        padding: .4px 1px .5px 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        margin-bottom: 1rem;
+        height: 31px;
+        .icon{
+            font-size: 1rem;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        input{
+            width: calc( 100% - 40px);
+            border: none;
+            font-size: .8rem;
+            outline: none;
+            color: $lightBlack;
+        }
+    }
+
+    .form-select{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        select{
+           width: 55%;
+           color: $lightBlack; 
+           padding: 2px 5px;
+           border-radius: 3px;
+        }
+        label{
+            color: #000000;
+            font-weight: $medium;
+        }
+    }
+    .form-btn{
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        margin: 2rem 0 3rem 0;
+        border-radius: 5px;
+    }
+    p{
+        font-size: 12px;
+        color: #000000;
+        font-weight: $medium;
+        a{
+            color: $lightBlue;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px){
+        &{
+            display: block;
+            min-height: 0;
+            height: 100%;
+            padding-bottom: 0;
+            width: 100%;
+
+            p{
+                text-align: center;
+            }
+        }
+
+       .form-container{
+            max-width: 80%;
+       }
+    }
+    @media screen and (max-width: 500px){
+       .form-container{
+            max-width: 100%;
+       }
+    }
+    @media screen and (max-width: 400px){
+       p{
+        font-size: 9px;
+       }
+    }
+
+}
+

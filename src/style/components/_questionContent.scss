@@ -1,0 +1,156 @@
+.skills-questions{
+    textarea{
+        color: $lightBlack;
+        margin-bottom: 10px;
+    }
+    input{
+        border: none;
+        padding: 4px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .app-tabs-container{
+        margin-bottom: 1rem;
+    }
+    .app-tab{
+        border-bottom: 2px solid  transparent;
+    }
+
+    .app-tab.active{
+        border-color: $blue;
+    }
+
+    .app-tab:first-child{
+        padding: 0 3rem 1rem 8px;
+    }
+    .app-tab:last-child{
+        padding: 0 1rem 1rem 1rem;
+    }
+    
+    .top-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 2rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        .download-content{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        a{
+            color: $blue;
+            font-size: 12px;
+            &:hover{
+                color: $lightBlue
+            }
+            .icon{
+                font-size: 1rem;
+            }
+        }
+
+        a:first-child{
+            margin-right: 3rem;
+        }
+        .skill-set{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            span{
+                font-size: 12px;
+                margin-right: 10px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            select{
+                color: $lightBlack;
+                font-size: 12px;
+                width: 100%;
+            }
+        }
+        &>div:first-child{
+            input{
+                width: 50%;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            button{
+                padding: 2px 12px;
+                border-radius: 4px;
+                font-size: 10px;
+            }
+        
+            button:first-child{
+                margin-right: 10px;
+            }
+
+            .select{
+                border-radius: 5px;
+                width: 100px;
+                padding: 1px;
+            }
+        }
+        
+    }
+    .textarea-group{
+        display: flex;
+        div:first-child{
+            margin-right: 10px;
+        }
+    }
+    .bottom-table{
+        background-color: #ffffff60;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+    }
+    .pagnition{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    @media screen and (max-width: 640px){
+        .top-form .download-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            a:first-child{
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .textarea-group{
+            flex-direction: column;
+            div:first-child{
+                margin-right: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .app-tab{
+            font-size: 10px;
+        }
+        .top-form{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 0;
+            &>div{
+                width: 100%;
+            }
+            .download-content{
+                position: static;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 260px){
+        .top-form textarea{
+            width: 100%;
+        }
+    }
+}
